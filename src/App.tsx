@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className=" in10-page__content">
+      <div className=" in10-page__name">
+        <p>Мария</p>
+        <p>Альберт</p>
+        <p>Мария</p>
+        <p>Альберт</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className=" in10-page__container _container">
+        <div className=" in10-page__image-block">
+          <div className=" in10-page__image">
+            <img src="img/invitation_no_10/bg.png" alt="" />
+          </div>
+        </div>
+        <div className=" in10-page__items">
+          <div className=" in10-page__item">
+            <div className=" in10-page__initials">М</div>
+            <div className=" in10-page__text">Максим Дарья</div>
+            <div className=" in10-page__initials">Д</div>
+          </div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
