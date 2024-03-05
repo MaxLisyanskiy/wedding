@@ -58,15 +58,15 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 
-  @media (max-width: 1292px) {
+  @media screen and (max-width: 1292px) {
     max-width: 970px;
   }
 
-  @media (max-width: 991.98px) {
+  @media screen and (max-width: 991.98px) {
     max-width: 750px;
   }
 
-  @media (max-width: 767.98px) {
+  @media screen and (max-width: 767.98px) {
     max-width: none;
     padding: 0 16px;
   }
@@ -84,7 +84,7 @@ body {
   position: relative;
   display: table;
 
-  @media (max-width: 1280px) {
+  @media screen and (max-width: 1280px) {
     font-size: calc(27px + 23 * ((100vw - 320px) / 960));
     margin: 0px auto 70px auto;
   }
