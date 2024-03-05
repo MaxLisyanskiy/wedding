@@ -1,0 +1,17 @@
+.program {
+  padding: 60px 16px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 50%;
+
+  &:nth-child(even) {
+    margin-top: 100px;
+  }
+}

@@ -3,16 +3,16 @@ import classes from './header.module.scss';
 const Header = () => {
   const menu = [
     {
-      link: '#story',
-      text: 'Наша история',
+      link: '#invitation',
+      text: 'Приглашение',
     },
     {
       link: '#program',
-      text: 'программа',
+      text: 'Программа',
     },
     {
       link: '#place',
-      text: 'Как добраться',
+      text: 'Адреса',
     },
     {
       link: '#survey',

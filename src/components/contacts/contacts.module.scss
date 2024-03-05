@@ -1,0 +1,53 @@
+.contacts {
+  padding: 60px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #fff;
+}
+
+.contactsTitle {
+  text-align: center;
+  font-size: 24px;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.contactsWrapp {
+  display: flex;
+  gap: 50px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  & p {
+    font-family: 'Angst';
+    font-size: 28px;
+    text-align: center;
+  }
+
+  & a {
+    font-size: 24px;
+    display: inline-flex;
+
+    &:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      display: block;
+      margin-right: 7px;
+      flex-shrink: 0;
+      background-image: url('../../assets/phone.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}

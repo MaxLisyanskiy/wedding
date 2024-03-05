@@ -1,6 +1,11 @@
 @import '_reset.scss';
 @import '_fonts.scss';
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
 html,
 body {
   height: 100%;
@@ -46,5 +51,70 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media (max-width: 1292px) {
+    max-width: 970px;
+  }
+
+  @media (max-width: 991.98px) {
+    max-width: 750px;
+  }
+
+  @media (max-width: 767.98px) {
+    max-width: none;
+    padding: 0 16px;
+  }
+}
+
+.title {
+  color: #000;
+  text-align: center;
+  font-family: 'Angst';
+  font-size: 50px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0px auto 130px auto;
+  position: relative;
+  display: table;
+
+  @media (max-width: 1280px) {
+    font-size: calc(27px + 23 * ((100vw - 320px) / 960));
+    margin: 0px auto 70px auto;
+  }
+
+  & span {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e7a9a9;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 38px;
+      height: 24px;
+      top: -12px;
+      right: 0px;
+      background: #f8f8f8 url(../assets/decor.svg) center / cover no-repeat;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 38px;
+      height: 24px;
+      top: -12px;
+      left: 0px;
+      background: #f8f8f8 url(../assets/decor.svg) center / cover no-repeat;
+    }
   }
 }

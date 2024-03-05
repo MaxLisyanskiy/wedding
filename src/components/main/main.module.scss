@@ -1,18 +1,5 @@
 .main {
   position: relative;
-  margin: 0px 0px 200px 0px;
-
-  @media (max-width: 991.98px) {
-    margin: 0px 0px 150px 0px;
-  }
-
-  @media (max-width: 767.98px) {
-    margin: 0px 0px 100px 0px;
-  }
-
-  @media (max-width: 479.98px) {
-    margin: 0px 0px 65px 0px;
-  }
 
   &:before {
     content: '';
@@ -160,8 +147,12 @@
 .image {
   position: absolute;
   bottom: 0;
-  left: 2%;
+  left: -15%;
   height: 80%;
+
+  @media (max-width: 1700px) {
+    left: -10%;
+  }
 
   @media (max-width: 992px) {
     left: 50%;
