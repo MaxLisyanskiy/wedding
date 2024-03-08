@@ -1,0 +1,64 @@
+.survey {
+  padding: 80px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:before {
+    content: '';
+    width: 808px;
+    height: 808px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    width: 808px;
+    height: 808px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    right: -30%;
+    z-index: -1;
+  }
+}
+
+.card {
+  margin-top: 30px;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+
+  border: 8px solid #e7a9a970;
+  border-radius: 8px;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 16px;
+    padding: 0;
+  }
+}
+
+.form {
+  width: 100%;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.button {
+  background: rgba(231, 169, 169, 1) !important;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}

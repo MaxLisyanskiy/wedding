@@ -1,0 +1,130 @@
+.wishes {
+  background-image: url('../../assets/survey_back.png');
+  padding: 60px 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 16px;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 800px;
+    height: 800px;
+    border: solid 1.5px rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    z-index: 0;
+
+    @media screen and (max-width: 500px) {
+      content: '';
+      width: 508px;
+      height: 508px;
+      border: solid 1px #ffffff33;
+      border-radius: 50%;
+      position: absolute;
+      top: -54%;
+      left: 0;
+      z-index: 0;
+    }
+  }
+
+  &:after {
+    content: '';
+    width: 800px;
+    height: 800px;
+    border: solid 1.5px rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    z-index: 0;
+
+    @media screen and (max-width: 500px) {
+      content: '';
+      width: 500px;
+      height: 500px;
+      border: solid 1px #ffffff33;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -40%;
+      right: -50%;
+      z-index: 0;
+    }
+  }
+}
+
+.wishesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  margin: 0 auto !important;
+
+  @media screen and (max-width: 500px) {
+    margin: 4px 16px !important;
+  }
+}
+
+.subTitle {
+  margin: 0 auto;
+  color: #000;
+  text-align: center;
+  font-family: 'Patriciana';
+  font-size: 34px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  display: table;
+  position: relative;
+  left: 50px;
+
+  @media screen and (max-width: 500px) {
+    left: 0;
+    font-size: 28px;
+    margin: 0 0 0 56px;
+    white-space: nowrap;
+  }
+}
+
+.wrapp {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.carousel {
+  height: 350px !important;
+  width: 500px !important;
+  clip-path: ellipse(50% 50% at 50% 50%);
+  background-color: #fff;
+  color: black;
+
+  @media screen and (max-width: 1000px) {
+    height: 230px !important;
+    width: 400px !important;
+  }
+}
+
+.content {
+  width: 300px !important;
+
+  @media screen and (max-width: 500px) {
+    width: 250px !important;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-family: 'Patriciana';
+  font-weight: 600;
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+}

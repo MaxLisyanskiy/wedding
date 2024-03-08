@@ -162,6 +162,7 @@
 
 .photo {
   height: 100%;
+  max-width: none !important;
 
   &:after {
     content: '';

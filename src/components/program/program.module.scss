@@ -1,17 +1,167 @@
 .program {
   padding: 60px 16px;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 808px;
+    height: 808px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    width: 808px;
+    height: 808px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    right: -30%;
+    z-index: -1;
+  }
 }
 
 .row {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .item {
+  position: relative;
   width: 50%;
 
+  @media (max-width: 767.98px) {
+    width: 80%;
+  }
+
   &:nth-child(even) {
-    margin-top: 100px;
+    margin-bottom: 30px;
+    place-self: flex-end;
+
+    @media (max-width: 767.98px) {
+      margin: 40px 0 80px;
+    }
+  }
+}
+
+.img {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  & img {
+    width: 80px;
+    height: auto;
+    transform: rotate(-10deg);
+
+    @media (max-width: 767.98px) {
+      width: 50px;
+    }
+  }
+}
+
+.img2 {
+  & img {
+    transform: rotate(10deg);
+  }
+}
+
+.titleWrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 50px 0px;
+
+  @media (max-width: 991.98px) {
+    font-size: 30px;
+    margin: 0px 0px 16px 0px;
+  }
+
+  & h4 {
+    color: #000;
+    font-family: 'Angst';
+    font-size: 40px;
+    font-weight: 50;
+    line-height: 100%;
+
+    @media (max-width: 991.98px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.span {
+  color: #000;
+  font-family: 'Angst';
+  font-size: 40px;
+  line-height: 100%;
+
+  background: #e1e1e1;
+  padding: 8px;
+  display: block;
+  height: fit-content;
+  border-radius: 8px;
+
+  @media (max-width: 991.98px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 600px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.span2 {
+  @media (max-width: 600px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+  }
+}
+
+.text {
+  color: #4e4e4e;
+  font-weight: 300;
+  line-height: 100%;
+  position: relative;
+  padding: 0px 0px 0px 20px;
+
+  &:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #e7a9a9;
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+
+  & p:first-child {
+    margin: 0px 0px 20px 0px;
+  }
+
+  & p:last-child {
+    margin-top: 8px;
+    font-size: 14px;
   }
 }
